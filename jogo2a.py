@@ -11,12 +11,7 @@ def click(caixax, caixay, caixaw, caixah):
     mouse = pygame.mouse.get_pos()
     if caixax < mouse[0] < caixax + caixaw and caixay < mouse[1] < caixay + caixah:
         print("Clique dentro da caixa")
-        status = STOP
-        #Aumentar uma pontuação
-        #Fazer a caixa sumir
-        #Fazer o alvo reiniciar caixax = -60 ou caixax = 610
-        #Aparecer um texto na tela.
-        
+        status = STOP        
     else:
         print("Clique fora da caixa")
         status = MOVE
